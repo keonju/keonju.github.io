@@ -28,10 +28,7 @@ function setup() {
 
 }
 
-function mouseClicked() {
-	wordsIndex += 1;
-	wordsIndex = wordsIndex % wordsArr.length;
-}
+
 function draw() {
 	background("#2C0735")
 	noStroke()
@@ -53,6 +50,7 @@ function draw() {
 	for(let x = 0; x < width; x = x + gap) {
 		for(let y = 0; y < height; y = y + gap) {
 			push();
+			fill(255,20)
 			translate(x, y);
 			rotate(slider1_value);
 			scale(0.5, slider3_value);
@@ -62,26 +60,30 @@ function draw() {
 	}
 	
 	push();
-	translate(20, height*0.5);
+	translate(width * 0.25, height * 0.25);
+	scale(2.0);
 	fill("#FAA275");
 	myArcD();
 	pop();
 	
 	push();
-	translate(120, height*0.5);
+	translate((width * 0.75) + slider2_value * 0.2, height*0.25);
+	scale(2.0);
 	animA();
 	pop();
 	
 	
 	push();
-	translate(200, height*0.5);
-	fill("#858AE3")
+	translate(width*0.25, height*0.75);
+	fill("#858AE3");
+	scale(2.0);
 	myTriW();
 	pop();
 	
 	push();
-	translate(280, height*0.5);
+	translate(width * 0.75, height*0.75);
 	fill("#4E148C");
+	scale(2.0);
 	myTriN();
 	pop();
 
