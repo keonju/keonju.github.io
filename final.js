@@ -28,7 +28,9 @@ function setup() {
 
 }
 
-
+function windowResized() {
+	resizeCanvas(windowWidth, windowHeight);
+}
 function draw() {
 	background("#2C0735")
 	noStroke()
