@@ -60,28 +60,28 @@ function draw() {
 	}
 	
 	push();
-	translate(width * 0.25, height * 0.25);
+	translate(width * 0.2, height * 0.2);
 	scale(2.0);
 	fill("#FAA275");
 	myArcD();
 	pop();
 	
 	push();
-	translate((width * 0.75) + slider2_value * 0.2, height*0.25);
+	translate((width * 0.6) + slider2_value * 0.2, height*0.2);
 	scale(2.0);
 	animA();
 	pop();
 	
 	
 	push();
-	translate(width*0.25, height*0.75);
+	translate(width*0.2, height*0.6);
 	fill("#858AE3");
 	scale(2.0);
 	myTriW();
 	pop();
 	
 	push();
-	translate(width * 0.75, height*0.75);
+	translate(width * 0.6, height*0.6);
 	fill("#4E148C");
 	scale(2.0);
 	myTriN();
